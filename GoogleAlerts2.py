@@ -136,7 +136,7 @@ if st.button("Fetch and Summarize Acquisitions"):
             st.markdown(formatted_summary, unsafe_allow_html=True)
 
             # OpenAI Summarization
-            with st.spinner("Generating summary with OpenAI..."):
+            with st.spinner("Generating summary...."):
                 openai_summary = summarize_alerts_with_openai(acquisition_alerts)
 
             st.subheader("OpenAI Summary")
