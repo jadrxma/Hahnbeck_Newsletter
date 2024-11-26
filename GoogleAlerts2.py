@@ -4,9 +4,8 @@ import openai
 from datetime import datetime
 import re
 
-# Hardcoded OpenAI API Key (Replace with your actual API key)
-OPENAI_API_KEY = "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"
-openai.api_key = OPENAI_API_KEY
+# Load OpenAI API key from Streamlit secrets
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 # Hardcoded RSS Feed URLs
 RSS_FEEDS = [
