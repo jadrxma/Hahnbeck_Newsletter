@@ -98,7 +98,7 @@ def summarize_alerts_with_openai(alerts):
         # Combine alerts into a structured format with links for the prompt
         structured_alerts = "\n".join([f"- {alert['title']} ([link]({alert['link']}))" for alert in alerts])
         response = openai.ChatCompletion.create(
-            model="gpt-4",
+            model="gpt-4o",
             messages=[
                 {"role": "system", "content": "You are a helpful assistant that categorizes and summarizes acquisition-related news by industry."},
                 {"role": "user", "content": f"Summarize and categorize the following acquisition-related alerts by industry, including links:\n\n{structured_alerts}"},
