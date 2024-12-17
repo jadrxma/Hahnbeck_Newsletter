@@ -105,7 +105,7 @@ def summarize_alerts_with_openai(alerts):
             model="gpt-4o",
             messages=[
                 {"role": "system", "content": "You are a helpful assistant that categorizes and summarizes acquisition-related news by industry."},
-                {"role": "user", "content": f"Summarize and categorize the following acquisition-related alerts by industry and also include the sub-catergory as well such as (example: Hemp drinks: title and source) but include health & wellness, food and beverages, sports and outdoors, home and DIY, including links:\n\n{structured_alerts}"},
+                {"role": "user", "content": f"Summarize and categorize the following acquisition-related alerts by industry and also include the sub-catergory as well such as (example: Hemp drinks: title and source) but include only health & wellness, food and beverages, sports and outdoors, home and DIY, Baby products and E-commerce focused brands, including links:\n\n{structured_alerts}"},
             ],
         )
         summary = response.choices[0].message["content"].strip()
