@@ -20,7 +20,7 @@ RSS_FEEDS = [
     "https://www.google.co.uk/alerts/feeds/00672085625077446626/2368405805161822986",
     "https://www.google.co.uk/alerts/feeds/00672085625077446626/2670728010081726541",
     "https://www.google.co.uk/alerts/feeds/00672085625077446626/7199575289154290510",
-    https://www.google.co.uk/alerts/feeds/00672085625077446626/5758220487720966515
+    "https://www.google.co.uk/alerts/feeds/00672085625077446626/5758220487720966515"
     
 ]
 # Function to remove HTML tags
